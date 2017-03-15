@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D39B336B1E79F7D8006ECA90 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D39B33691E79F7D8006ECA90 /* Card.cpp */; };
+		D39B336E1E79F80F006ECA90 /* Hand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D39B336C1E79F80F006ECA90 /* Hand.cpp */; };
 		D3D06B7A1E3C9120002B49C9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3D06B791E3C9120002B49C9 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D39B33691E79F7D8006ECA90 /* Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
+		D39B336A1E79F7D8006ECA90 /* Card.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Card.hpp; sourceTree = "<group>"; };
+		D39B336C1E79F80F006ECA90 /* Hand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hand.cpp; sourceTree = "<group>"; };
+		D39B336D1E79F80F006ECA90 /* Hand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Hand.hpp; sourceTree = "<group>"; };
 		D3D06B761E3C9120002B49C9 /* Black_Jack_CPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Black_Jack_CPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D06B791E3C9120002B49C9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +63,10 @@
 		D3D06B781E3C9120002B49C9 /* Black_Jack_CPP */ = {
 			isa = PBXGroup;
 			children = (
+				D39B336C1E79F80F006ECA90 /* Hand.cpp */,
+				D39B336D1E79F80F006ECA90 /* Hand.hpp */,
+				D39B33691E79F7D8006ECA90 /* Card.cpp */,
+				D39B336A1E79F7D8006ECA90 /* Card.hpp */,
 				D3D06B791E3C9120002B49C9 /* main.cpp */,
 			);
 			path = Black_Jack_CPP;
@@ -120,6 +130,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39B336E1E79F80F006ECA90 /* Hand.cpp in Sources */,
+				D39B336B1E79F7D8006ECA90 /* Card.cpp in Sources */,
 				D3D06B7A1E3C9120002B49C9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
