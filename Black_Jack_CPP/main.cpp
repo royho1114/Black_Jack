@@ -9,12 +9,18 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include "Deck.hpp"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-//    Hand test("6", "A7", 1);
-//    test.printTable();
-    // insert code here...
-    
+    Deck d = Deck();
+    for (int i = 0; i < 5; i++) {
+        Card c = d.pickCard('T', 'S');
+        cout << c.getSuit() << ": " << c.getPoint() << endl;
+    }
+    for (int i = 0; i < 104; i++) {
+        Card c = d.getCard();
+        cout << c.getSuit() << ": " << c.getPoint() << endl;
+    }
     return 0;
 }

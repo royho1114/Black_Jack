@@ -16,7 +16,7 @@ using namespace::std;
 
 class Card {
 public:
-    Card(int, int);
+    Card(int p, int s);
     char getPoint() const;
     char getSuit() const;
 private:

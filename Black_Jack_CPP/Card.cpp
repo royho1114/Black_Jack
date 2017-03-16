@@ -8,48 +8,48 @@
 
 #include "Card.hpp"
 
-Card::Card(int point, int suit) {
-    switch (point) {
+Card::Card(int p, int s) {
+    switch (p) {
         case 1:
-            this -> point = 'A';
+            point = 'A';
             break;
             
         case 10:
-            this -> point = 'T';
+            point = 'T';
             break;
             
         case 11:
-            this -> point = 'J';
+            point = 'J';
             break;
             
         case 12:
-            this -> point = 'Q';
+            point = 'Q';
             break;
             
         case 13:
-            this -> point = 'K';
+            point = 'K';
             break;
             
         default:
-            this -> point = '0' + point;
+            point = ('0' + p);
             break;
     }
     
-    switch (suit) {
+    switch (s) {
         case 1:
-            this -> suit = 'S';
+            suit = 'S';
             break;
             
         case 2:
-            this -> suit = 'H';
+            suit = 'H';
             break;
             
         case 3:
-            this -> suit = 'D';
+            suit = 'D';
             break;
             
         default:
-            this -> suit = 'P';
+            suit = 'P';
             break;
     }
 }

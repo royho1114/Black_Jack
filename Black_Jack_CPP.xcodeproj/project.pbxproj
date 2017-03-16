@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D39B336B1E79F7D8006ECA90 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D39B33691E79F7D8006ECA90 /* Card.cpp */; };
 		D39B336E1E79F80F006ECA90 /* Hand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D39B336C1E79F80F006ECA90 /* Hand.cpp */; };
+		D39B33741E7A0127006ECA90 /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D39B33721E7A0127006ECA90 /* Deck.cpp */; };
 		D3D06B7A1E3C9120002B49C9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3D06B791E3C9120002B49C9 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		D39B336A1E79F7D8006ECA90 /* Card.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Card.hpp; sourceTree = "<group>"; };
 		D39B336C1E79F80F006ECA90 /* Hand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hand.cpp; sourceTree = "<group>"; };
 		D39B336D1E79F80F006ECA90 /* Hand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Hand.hpp; sourceTree = "<group>"; };
+		D39B33721E7A0127006ECA90 /* Deck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
+		D39B33731E7A0127006ECA90 /* Deck.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Deck.hpp; sourceTree = "<group>"; };
 		D3D06B761E3C9120002B49C9 /* Black_Jack_CPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Black_Jack_CPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D06B791E3C9120002B49C9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +70,8 @@
 				D39B336D1E79F80F006ECA90 /* Hand.hpp */,
 				D39B33691E79F7D8006ECA90 /* Card.cpp */,
 				D39B336A1E79F7D8006ECA90 /* Card.hpp */,
+				D39B33721E7A0127006ECA90 /* Deck.cpp */,
+				D39B33731E7A0127006ECA90 /* Deck.hpp */,
 				D3D06B791E3C9120002B49C9 /* main.cpp */,
 			);
 			path = Black_Jack_CPP;
@@ -130,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39B33741E7A0127006ECA90 /* Deck.cpp in Sources */,
 				D39B336E1E79F80F006ECA90 /* Hand.cpp in Sources */,
 				D39B336B1E79F7D8006ECA90 /* Card.cpp in Sources */,
 				D3D06B7A1E3C9120002B49C9 /* main.cpp in Sources */,

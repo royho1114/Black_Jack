@@ -7,30 +7,42 @@
 //
 
 #include "Hand.hpp"
-Hand::Hand(int card) {
-    point = card;
-    if (card == 0 || card == 1) point += 10;
-    ace = (card == 1);
-    cards.push_back(card);
-}
 
-Hand::Hand(vector<int> cards) {
-    setHand(cards);
-}
-
-void Hand::getCard(int card) {
-    if (card == 1) ace = true;
-    point += card;
-    if (card == 0 || card == 1) point += 10;
-    if (ace && point > 21) point -= 10;
-    cards.push_back(card);
-}
-
-void Hand::removeCard() {
-    int card = cards.back();
-    cards.pop_back();
+Hand::Hand(Card) {
     
 }
+
+Hand::Hand(vector<Card>) {
+    
+}
+void Hand::addCard(Card) {
+    
+}
+void removeCard();
+//Hand::Hand(int card) {
+//    point = card;
+//    if (card == 0 || card == 1) point += 10;
+//    ace = (card == 1);
+//    cards.push_back(card);
+//}
+//
+//Hand::Hand(vector<int> cards) {
+//    setHand(cards);
+//}
+//
+//void Hand::getCard(int card) {
+//    if (card == 1) ace = true;
+//    point += card;
+//    if (card == 0 || card == 1) point += 10;
+//    if (ace && point > 21) point -= 10;
+//    cards.push_back(card);
+//}
+//
+//void Hand::removeCard() {
+////    int card = cards.back();
+//    cards.pop_back();
+//    
+//}
 
 //Hand::Hand(string bank, string player, int deck) {
 //    cout << "In the case:" << endl;
