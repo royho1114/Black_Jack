@@ -8,17 +8,49 @@
 
 #include "Hand.hpp"
 
-Hand::Hand(Card) {
-    
+Hand::Hand() {
+    ace = false;
+    point = 0;
 }
 
-Hand::Hand(vector<Card>) {
-    
+Hand::Hand(vector<Card> cs) {
+    ace = false;
+    point = 0;
+    cards = cs;
+    for (Card c: cards) addCard(c);
 }
-void Hand::addCard(Card) {
-    
+
+void Hand::addCard(Card c) {
+    cards.push_back(c);
+    char p = c.getPoint();
+    if (p == 'A') {
+        if (point + 11 > 21) point += 1;
+        else {
+            point += 11;
+            ace = true;
+        }
+    }
+    else {
+        if (p >= '2' && p <= '9') point += (p - '0');
+        else point += 10;
+        if (point > 21 && ace) {
+            point -= 10;
+            ace = false;
+        }
+    }
 }
-void removeCard();
+
+void Hand::removeLast() {
+    cards.pop_back();
+    ace = false;
+    point = 0;
+    for (Card c: cards) addCard(c);
+}
+
+int Hand::getPoint() {
+    return point;
+}
+
 //Hand::Hand(int card) {
 //    point = card;
 //    if (card == 0 || card == 1) point += 10;

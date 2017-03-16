@@ -17,13 +17,14 @@ using namespace::std;
 
 class Hand {
 public:
-    Hand(Card);
+    Hand();
     Hand(vector<Card>);
     void addCard(Card);
-    void removeCard();
+    void removeLast();
+    int getPoint();
 
 private:
-    bool ace;
+    bool ace;   // state of ace: true: if there is ace with point 11; ohterwise: false.
     int point;
     vector<Card> cards;
 };
